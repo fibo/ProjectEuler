@@ -15,5 +15,5 @@ where *problem number* is the id used in url
 
 `https://projecteuler.net/problem=<problem number>`
 
-Solved problems will be moved in `solved` folder.
+Solved problems will be moved in *solved/* folder.
 
