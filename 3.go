@@ -5,11 +5,25 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	factor := Sqrt(600851475143)
+	var (
+		//num    int64 = 600851475143
+		num    int64 = 121
+		factor int64 = 0
+		i      int64 = 2
+	)
+
+	for i < num {
+		fmt.Println(num % i)
+
+		if num%i == 0 {
+			factor = i
+		}
+
+		i++
+	}
 
 	fmt.Println(factor)
 }
