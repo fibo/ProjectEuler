@@ -20,6 +20,10 @@ func sumOfTheSquares(n int) int64 {
 		sum int64 = 0
 	)
 
+	for i := 0; i <= n; i++ {
+		sum += int64(i * i)
+	}
+
 	return sum
 }
 
@@ -28,17 +32,22 @@ func squareOfTheSums(n int) int64 {
 		sum int64 = 0
 	)
 
-	return sum
+	for i := 0; i <= n; i++ {
+		sum += int64(i)
+
+	}
+
+	return sum * sum
 }
 
 func main() {
 	var (
 		diff int64
 		// first n natural numbers
-		n = 10
+		n = 100
 	)
 
-	diff = sumOfTheSquares(n) - squareOfTheSums(n)
+	diff = squareOfTheSums(n) - sumOfTheSquares(n)
 
 	fmt.Println(diff)
 }
